@@ -1,12 +1,34 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import HeroSection from "@/components/HeroSection";
+import FeaturesSection from "@/components/FeaturesSection";
+import MembershipSection from "@/components/MembershipSection";
+import WomensFacilitySection from "@/components/WomensFacilitySection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import FaqSection from "@/components/FaqSection";
+import CallToAction from "@/components/CallToAction";
+import { useEffect } from "react";
 
 const Index = () => {
+  useEffect(() => {
+    // Scroll to top on page load
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <main>
+        <HeroSection />
+        <FeaturesSection />
+        <MembershipSection />
+        <WomensFacilitySection />
+        <TestimonialsSection />
+        <FaqSection />
+        <CallToAction />
+      </main>
+      <Footer />
     </div>
   );
 };
