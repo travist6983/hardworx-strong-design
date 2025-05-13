@@ -7,7 +7,7 @@ const testimonials = [
   {
     name: 'Sarah Johnson',
     role: 'Member since 2021',
-    content: 'Since joining Hardworx, I've lost 30 pounds and gained so much confidence. The 24/7 access fits perfectly with my busy schedule, and the staff is always supportive!',
+    content: 'Since joining Hardworx, I\'ve lost 30 pounds and gained so much confidence. The 24/7 access fits perfectly with my busy schedule, and the staff is always supportive!',
     rating: 5
   },
   {
